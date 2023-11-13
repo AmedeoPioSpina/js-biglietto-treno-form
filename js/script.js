@@ -11,12 +11,9 @@ startCalcBtn.addEventListener("click", () => {
     else{
         let actualPrice;
         let purePrice = userDistance * 0.1976;
-        console.log(purePrice)
 
         if( userAge < 18){
             actualPrice = purePrice - (purePrice * 17.65 / 100);
-            console.log((purePrice * 17.65 / 100))
-            console.log(purePrice - (purePrice * 17.65 / 100))
         }
         else if (userAge >= 65) {
             actualPrice = purePrice - (purePrice * 53.27 / 100);
